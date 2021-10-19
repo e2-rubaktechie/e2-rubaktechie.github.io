@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Map</title>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="./jquery.imagemapster.min.js"></script>
+		<style type="text/css">
+			body,html{
+				height:100%;
+				width:100%;
+				margin : 0;
+			}
+			.rooms-container{
+				height:100%;
+				width : 100%;
+			}
+			.rooms{
+				height: 100%;
+				width: auto;
+			}
+			#mapster_wrap_0{
+				margin: auto;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="rooms-container">
+			<img src="./map.png" id="rooms" class="rooms" usemap="#rooms">
+				<map name="rooms">
+					<area target="" alt="201" status="occupied" title="201" href="#" coords="311,535,366,517,384,579,330,597" shape="poly">
+					<area target="" alt="202" status="occupied" title="202" href="#" coords="327,598,382,582,400,645,346,661" shape="poly">
+					<area target="" alt="203" status="occupied" title="203" href="#" coords="344,662,401,647,417,711,364,721" shape="poly">
+					<area target="" alt="204" status="occupied" title="204" href="#" coords="334,731,398,715,414,769,349,789" shape="poly">
+					<area target="" alt="205" status="occupied" title="205" href="#" coords="335,732,298,740,306,767,285,773,295,801,348,789" shape="poly">
+					<area target="" alt="206" status="occupied" title="206" href="#" coords="281,807,273,779,252,780,245,756,206,762,225,819" shape="poly">
+					<area target="" alt="207" status="occupied" title="207" href="#" coords="143,783,161,838,221,821,209,765" shape="poly">
+					<area target="" alt="208" status="alert" title="208" href="#" coords="108,723,124,786,179,770,165,721,152,713" shape="poly">
+					<area target="" alt="209" status="alert" title="209" href="#" coords="88,658,106,723,152,711,159,698,145,646" shape="poly">
+					<area target="" alt="210" status="alert" title="210" href="#" coords="145,643,176,636,186,663,211,659,217,685,160,701" shape="poly">
+					<area target="" alt="212" status="maintanance" title="212" href="#" coords="236,620,293,605,300,632,276,639,282,667,252,677" shape="poly">
+					<area target="" alt="211" status="maintanance" title="211" href="#" coords="178,636,234,620,247,676,220,685,209,657,185,663" shape="poly">
+					<area target="" alt="107" status="unoccupied" title="107" href="#" coords="161,79,144,133,208,152,225,96" shape="poly">
+					<area target="" alt="106" status="unoccupied" title="106" href="#" coords="225,98,209,151,244,160,252,137,270,139,279,113" shape="poly">
+					<area target="" alt="105" status="unoccupied" title="105" href="#" coords="293,116,285,145,303,148,298,175,334,186,350,131" shape="poly">
+					<area target="" alt="104" status="alert" title="104" href="#" coords="335,187,351,131,414,149,399,203" shape="poly">
+					<area target="" alt="103" status="alert" title="103" href="#" coords="363,195,417,208,399,270,347,257" shape="poly">
+					<area target="" alt="102" status="alert" title="102" href="#" coords="344,258,399,272,383,334,330,320" shape="poly">
+					<area target="" alt="101" status="unoccupied" title="101" href="#" coords="328,323,384,338,366,399,312,384" shape="poly">
+					<area target="" alt="108" status="unoccupied" title="108" href="#" coords="123,130,179,146,165,195,151,205,106,192" shape="poly">
+					<area target="" alt="109" status="unoccupied" title="109" href="#" coords="106,195,89,256,144,275,159,218,152,205" shape="poly">
+					<area target="" alt="110" status="unoccupied" title="110" href="#" coords="161,217,218,233,210,259,187,253,177,281,145,272" shape="poly">
+					<area target="" alt="111" status="occupied" title="111" href="#" coords="179,282,187,254,209,260,220,233,249,241,234,294" shape="poly">
+					<area target="" alt="112" status="maintanance" title="112" href="#" coords="252,240,282,248,275,276,301,283,292,310,235,296" shape="poly">
+					<area target="" alt="304" status="maintanance" title="304" href="#" coords="511,147,576,130,591,188,528,203" shape="poly">
+					<area target="" alt="303" status="maintanance" title="303" href="#" coords="508,209,562,195,580,256,525,272" shape="poly">
+					<area target="" alt="302" status="maintanance" title="302" href="#" coords="526,274,579,258,596,320,542,336" shape="poly">
+					<area target="" alt="305" status="occupied" title="305" href="#" coords="576,130,633,116,640,144,622,151,627,176,593,186" shape="poly">
+					<area target="" alt="301" status="occupied" title="301" href="#" coords="543,338,595,321,615,384,558,398" shape="poly">
+					<area target="" alt="306" status="occupied" title="306" href="#" coords="647,113,703,97,717,153,681,160,672,137,653,140" shape="poly">
+					<area target="" alt="307" status="occupied" title="307" href="#" coords="703,97,765,80,781,134,718,151" shape="poly">
+					<area target="" alt="308" status="occupied" title="308" href="#" coords="747,146,801,129,817,195,770,205,758,195" shape="poly">
+					<area target="" alt="309" status="occupied" title="309" href="#" coords="766,217,776,207,818,195,835,257,781,272" shape="poly">
+					<area target="" alt="310" status="maintanance" title="310" href="#" coords="706,232,765,216,779,271,747,281,740,253,716,260" shape="poly">
+					<area target="" alt="311" status="occupied" title="311" href="#" coords="675,242,706,232,715,260,739,255,748,283,690,296" shape="poly">
+					<area target="" alt="312" status="occupied" title="312" href="#" coords="642,249,674,241,689,296,634,310,626,285,649,276" shape="poly">
+					<area target="" alt="512" status="maintanance" title="512" href="#" coords="986,232,1021,224,1033,271,1018,274,1021,287,1001,292" shape="poly">
+					<area target="" alt="511" status="maintanance" title="511" href="#" coords="1022,225,1055,217,1062,242,1070,272,1050,276,1046,269,1033,272" shape="poly">
+					<area target="" alt="510" status="occupied" title="510" href="#" coords="1056,214,1089,206,1103,253,1087,255,1090,267,1072,273" shape="poly">
+					<area target="" alt="509" status="maintanance" title="509" href="#" coords="1091,205,1123,199,1140,255,1121,258,1115,249,1104,253" shape="poly">
+					<area target="" alt="508" status="occupied" title="508" href="#" coords="1201,176,1208,211,1152,226,1147,212,1142,191" shape="poly">
+					<area target="" alt="507" status="maintanance" title="507" href="#" coords="1151,229,1210,212,1219,244,1171,258,1166,245,1156,246" shape="poly">
+					<area target="" alt="506" status="maintanance" title="506" href="#" coords="1169,259,1174,273,1166,276,1171,295,1228,281,1219,247" shape="poly">
+					<area target="" alt="505" status="alert" title="505" href="#" coords="1171,298,1227,282,1237,315,1187,326,1184,314,1174,316" shape="poly">
+					<area target="" alt="504" status="alert" title="504" href="#" coords="1188,329,1239,316,1247,350,1187,364,1183,347,1192,343" shape="poly">
+					<area target="" alt="503" status="alert" title="503" href="#" coords="1187,367,1247,352,1257,386,1197,401" shape="poly">
+					<area target="" alt="502" status="occupied" title="502" href="#" coords="1180,405,1146,412,1132,367,1147,364,1146,354,1163,348" shape="poly">
+					<area target="" alt="501" status="occupied" title="501" href="#" coords="1131,365,1143,413,1111,422,1103,397,1096,365,1114,359,1118,371" shape="poly">
+					<area target="" alt="601" status="occupied" title="601" href="#" coords="1110,491,1144,500,1134,550,1119,547,1114,556,1096,550" shape="poly">
+					<area target="" alt="602" status="occupied" title="602" href="#" coords="1134,551,1146,499,1179,511,1163,568,1146,565,1145,556" shape="poly">
+					<area target="" alt="603" status="occupied" title="603" href="#" coords="1199,517,1256,532,1247,566,1189,552" shape="poly">
+					<area target="" alt="604" status="occupied" title="604" href="#" coords="1188,587,1194,576,1182,571,1188,553,1247,569,1237,603" shape="poly">
+					<area target="" alt="605" status="maintanance" title="605" href="#" coords="1177,601,1188,589,1237,603,1226,635,1170,620" shape="poly">
+					<area target="" alt="606" status="maintanance" title="606" href="#" coords="1171,621,1228,636,1217,672,1169,658,1172,644,1166,642" shape="poly">
+					<area target="" alt="607" status="maintanance" title="607" href="#" coords="1170,657,1218,671,1210,705,1153,688,1159,671,1168,672" shape="poly">
+					<area target="" alt="608" status="maintanance" title="608" href="#" coords="1152,691,1143,724,1200,741,1209,706" shape="poly">
+					<area target="" alt="609" status="occupied" title="609" href="#" coords="1103,664,1114,665,1119,656,1138,661,1123,719,1091,711" shape="poly">
+					<area target="" alt="610" status="occupied" title="610" href="#" coords="1088,710,1101,661,1088,659,1090,649,1071,644,1055,702" shape="poly">
+					<area target="" alt="611" status="maintanance" title="611" href="#" coords="1032,644,1048,648,1049,639,1069,644,1055,701,1020,691" shape="poly">
+					<area target="" alt="612" status="maintanance" title="612" href="#" coords="986,682,1018,692,1032,644,1020,640,1020,629,1001,626" shape="poly">
+				</map>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var image = $('#rooms');
+		var alert = "Alert";
+		var occupied = "Good";
+		var unoccupied = "Un-Occupied";
+		var maintanance = "Maintanace needed";
+		image.mapster({
+		mapKey: 'status',
+		showToolTip: true,
+		areas: [
+			{
+				key: "maintanance",
+				fillColor: "0000FF",
+				staticState: true,
+				toolTip : maintanance
+			},
+			{
+				key: "occupied",
+				fillColor: "00FF00",
+				staticState: true,
+				toolTip : occupied
+			},
+			{
+				key: "alert",
+				fillColor: "FF0000",
+				staticState: true,
+				toolTip : alert
+			},
+			{
+				key: "unoccupied",
+				fillColor: "808080",
+				staticState: true,
+				toolTip : unoccupied
+			}
+		]
+		});
+	</script>
+</html>
